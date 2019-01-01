@@ -1,0 +1,25 @@
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat-Bold";
+  color: #8dd3f5;
+  text-align: center;
+}
+p {
+  color: #8f8f8f;
+  text-align: center;
+}
+.gallery{
+  margin: 10px 150px;
+}
+.gallery img{
+  transition: 1s;
+  padding:15px;
+  width: 200px;
+}
+.gallery img:hover{
+  filter: grayscale(100%);
+
+    transform:scale(1.1);
+}
+.back{
+  text-align: center;
+}

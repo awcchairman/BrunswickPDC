@@ -69,7 +69,7 @@ margin-top: 10px;
   left: 400px;
   bottom:0;
   width:50%;
-  z-index: 1; 
+  z-index: 1;
 }
 
 .otherShark{
@@ -436,4 +436,13 @@ width: 15%;
 }
 .pastTravel{
   font-size: 12px;
+}
+.yoga{
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: red;
+}
+.NCDFlag{
+  margin-top: 20px;
 }

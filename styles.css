@@ -444,5 +444,10 @@ width: 15%;
   color: red;
 }
 .NCDFlag{
-  margin-top: 20px;
+  margin: 20px;
+  /* padding-bottom: 5px; */
+}
+.stuff{
+  margin-left: 140px;
+  text-align: left;
 }

@@ -43,11 +43,16 @@ color: #404969;
 #title .container-fluid {
   padding: 3% 15% 15%;
 }
+.forward{
+  z-index: 1; position:relative;
+}
 .shark1{
   position:relative;
   left:1100px;
   top:150px;
   width:10%;
+
+
 }
 
 .shark{
@@ -64,6 +69,7 @@ margin-top: 10px;
   left: 400px;
   bottom:0;
   width:50%;
+  z-index: 1;
 }
 
 .otherShark{
@@ -94,6 +100,21 @@ left: 10px;
   padding-left: 10px;
   text-shadow: 1px 1px Black;
 }
+.title1{
+  font-family: "Montserrat-Black";
+  font-size: 2.5rem;
+  font-weight: 900;
+  line-height: .1;
+  padding-top: 10px;
+  padding-left: 10px;
+  text-shadow: 1px 1px Black;
+}
+
+.divingH2{
+  padding-top: 20px;
+  color: black;
+}
+
 
 .section-heading {
   font-size: 3rem;
@@ -173,19 +194,6 @@ left: 10px;
   border-radius: 100%;
   margin: 20px;
 }
-/* .carousel-control-prev-icon:after {
-  content: '<';
-  font-size: 55px;
-  color: grey;
-}
-.carousel-control-next-icon:after
-{
-  content: '>';
-  font-size: 55px;
-  color: grey;
-  position: relative;
-padding-bottom: 10px;
-  } */
 
 /* <!-- Press --> */
 #press {
@@ -201,21 +209,7 @@ bottom: 20PX;
 margin-top: 40px;
   width:50%;
 }
-.usa{
-  margin-left: 125px;
-}
-.mexico{
-  margin-left: 175px;
-}
-.bonaire{
-  margin-left: 165px;
-}
-.belize{
-  margin-left: 200px;
-}
-.philippines{
-  margin-left: 200px;
-}
+
 /* pricing section */
 #pricing {
   padding: 100px;
@@ -328,29 +322,7 @@ div.desc {
   width: 25%;
 }
 
-/* The Modal (background) */
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  padding-top: 100px;
-  left: 0;
-  top: 0;
-  width: 99%;
-  height: 99%;
-  overflow: auto;
-  background-color: black;
-}
 
-/* Modal Content */
-.modal-content {
-  position: relative;
-  background-color: #fefefe;
-  margin: auto;
-  padding: 0;
-  width: 90%;
-  max-width: 1200px;
-}
 
 /* The Close Button */
 .close {
@@ -454,4 +426,23 @@ img.hover-shadow {
   filter: grayscale(100%);
 
     transform:scale(1.1);
+}
+.back{
+  margin-left: 40%;
+margin-right: 40%;
+/* vertical-align: middle; */
+width: 15%;
+
+}
+.pastTravel{
+  font-size: 12px;
+}
+.yoga{
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: red;
+}
+.NCDFlag{
+  margin-top: 20px;
 }

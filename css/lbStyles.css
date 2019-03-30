@@ -23,3 +23,37 @@ p {
 .back{
   text-align: center;
 }
+.btn-block {
+  display: block;
+  width: 100%;
+}
+
+.btn-lg {
+  padding: .5rem 1rem;
+  font-size: 1.251rem;
+  line-height: 1.5rem;
+  border-radius: .3rem;
+}
+
+.btn-group-lg {
+  padding: .5rem 1rem;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  border-radius: .3rem;
+}
+
+.btn-outline-primary {
+  color: #007bff;
+  background-color: transparent;
+  background-image: none;
+  border-color: #007bff;
+}
+
+.btn {
+  font-weight: 400;
+  white-space: nowrap;
+  vertical-align: middle;
+  border: 1px solid transparent;
+
+  
+}

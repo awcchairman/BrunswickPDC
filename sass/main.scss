@@ -1,0 +1,30 @@
+@import "abstracts/functions";
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+@import "base/animations";
+@import "base/base";
+@import "base/typography";
+@import "base/utilities";
+
+@import "componets/button";
+@import "componets/composition";
+@import "componets/popup";
+@import "componets/cards";
+@import "componets/instructor";
+@import "componets/newFeatures";
+@import "componets/button";
+@import "componets/story";
+@import "componets/bg-video";
+
+@import "componets/form";
+
+@import "pages/home";
+
+@import "layouts/grid";
+@import "layouts/footer";
+@import "layouts/instructor";
+@import "layouts/navigation";
+@import "layouts/pastTravel";
+@import "layouts/header";
+

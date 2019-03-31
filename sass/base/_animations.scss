@@ -1,0 +1,40 @@
+/* header annimanation */
+@keyframes moveInLeft{
+    0%{
+    opacity: 0;
+    transform: translatex(-10rem);
+    }
+    80%{
+        transform: translate(-2rem);
+    }
+    100%{
+    opacity: 1;
+    transform: translate(0)
+    }
+    }
+    
+    @keyframes moveInRight{
+        0%{
+        opacity: 0;
+        transform: translatex(10rem);
+        }
+        80%{
+            transform: translate(2rem);
+        }
+        100%{
+        opacity: 1;
+        transform: translate(0)
+        }
+        }
+    /* button annimation */
+        @keyframes moveInButton{
+            0%{
+            opacity: 0;
+            transform: translateY(10rem);
+            }
+            
+            100%{
+            opacity: 1;
+            transform: translate(0)
+            }
+            }

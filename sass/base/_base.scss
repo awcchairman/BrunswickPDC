@@ -1,0 +1,46 @@
+//variables for media querries  RESPONSIVE BREAKPOINTS
+$bp-largest: 75em;  //1220/16
+$bp-large: 62.5em;  //1000/16
+$bp-medium: 50em;  //800/16
+$bp-small: 37.5em;  //600/16
+
+
+
+/* the universal selector * tells all browser to set your web page in a certain way in this case Margin padding to 0 */
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+
+    
+    }
+    /*this is a global element so not typography
+    
+    makes calc easy for rem settings however setting px is bad pratice so set to % divive 10 px by 16px(standard browser 16 size so you get 62.5%*/
+    html{
+        /*  this defines what 1 rem is so a global element and not typography  font-size: 10px; */
+        font-size: 62.5%;  //1rem=10px  10/16px=62.5%
+
+        //Order is important in media queries so the tab - land needs to be first
+        @media only screen and (max-width: $bp-largest){
+            font-size: 50%;
+        }
+        
+    }
+    body{        
+        box-sizing: border-box;
+         /* this puts a border arount the entire web page */
+        /* was 30 px change to rem 30/10 = 3 10 came from font size 10px above */
+        padding: 3rem;
+
+       
+
+        
+        
+        ::selection{
+            background-color: $color-primary;
+            color: $color-white
+        }
+    }

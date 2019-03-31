@@ -1,0 +1,291 @@
+.header{
+    height: 85vh;
+    /* linear grad pramater 1 direction  parm 2 two colors (opacity is done with the color editor first slider when the slider opens maks sure you are on rgba) pram 3 the image */
+    background-image: linear-gradient(
+        to right bottom,
+        rgba($color-primary-light, 0.8),
+        rgba($color-primary-dark, 0.8)),
+    url(../img/sharks-feed.jpg);
+    background-size: cover;
+    background-position: top;
+    /* header is the parent of logobox */
+    position: relative;
+
+
+    @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)){
+        -webkit-clip-path: polygon(0 0, 100% 0 , 100% 75vh, 0 100%);
+        /* you have to define the 4 polygon coordinates top left is firts moving clockwise (vh is viewport height)*/
+        clip-path: polygon(0 0, 100% 0 , 100% 75vh, 0 100%);
+        height: 95vh;
+    }
+    // means when the screen is larger than 192 dpi and the width is > 600 px it will load the larger image
+// the comma acts like an or so you can put two media queries together
+// Media queries are alway in em 2000/16=125
+
+@media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
+        only screen and (-webkit-min-device-pixel-ratio:2) and (min-width: 37.5em),
+        only screen and (min-width: 125em)
+
+{
+    background-image: linear-gradient(to right bottom, rgba($color-primary-light, 0.8), rgba($color-primary-dark, 0.8)),  
+    url(../img/hero.jpg);
+}
+   
+    @include respond(phone){
+        -webkit-clip-path: polygon(0 0, 100% 0 , 100% 85vh, 0 100%);
+        /* you have to define the 4 polygon coordinates top left is firts moving clockwise (vh is viewport height)*/
+        clip-path: polygon(0 0, 100% 0 , 100% 85vh, 0 100%);
+         
+     }   
+&__logo-box{
+    position: absolute; 
+    /* will position based on the parent which is header */
+    top: 4rem;
+    left: 4rem;
+} 
+&__logo{
+    height: 6.5rem;
+}
+&__text-box{
+    position: absolute;
+    top: 40%;
+    /* normally 50 % but because of wedge we will move text up to 40% welps with the illusion */
+    left: 50%;
+    /* transform -50% will center the text not based on parent but on the actual text */
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+&__mt{
+    background-image: linear-gradient(
+                to right bottom,
+                rgba($color-secondary-light, 0.8),
+                 rgba($color-yellow-dark, 0.8)),
+             url(../img/travel.jpg);
+}
+&__cozumel{
+    background-image: linear-gradient(
+                to right bottom,
+                rgba(pink, 0.8),
+                 rgba($color-yellow-dark, 0.8)),
+             url(../img/camera.jpg);
+
+}
+
+&__bonaire{
+    background-image: linear-gradient(
+                to right bottom,
+                rgba(purple, 0.8),
+                 rgba($color-yellow-dark, 0.8)),
+             url(../img/camera-2.jpg);
+
+}
+
+&__PI{
+    background-image: linear-gradient(
+                to right bottom,
+                rgba(red, 0.8),
+                 rgba($color-green-light, 0.8)),
+             url(../img/camera-3.jpg);
+
+}
+&__pt{
+
+    display: grid;
+    grid-column: 1/-1;
+
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(red, 0.8),
+         rgba($color-green-light, 0.8)),
+     url(../img/camera-3.jpg);
+
+}
+&__instructor{
+    display: grid;
+    grid-column: 1/-1;
+    background-image: linear-gradient(
+        to right bottom,
+        rgba($color-primary-light, .8),
+         rgba($color-primary-light, 0.8)),
+     url(../img/knowledge1.jpg); 
+}
+} 
+
+
+
+// .header__mt{
+//     height: 55vh;
+//     /* linear grad pramater 1 direction  parm 2 two colors (opacity is done with the color editor first slider when the slider opens maks sure you are on rgba) pram 3 the image */
+//     background-image: linear-gradient(
+//         to right bottom,
+//         rgba($color-secondary-light, 0.8),
+//         rgba($color-yellow-dark, 0.8)),
+//     url(../img/travel.jpg);
+//     background-size: cover;
+//     background-position: top;
+//     /* header is the parent of logobox */
+//     position: relative;
+
+
+//     @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)){
+//         -webkit-clip-path: polygon(0 0, 100% 0 , 100% 75vh, 0 100%);
+//         /* you have to define the 4 polygon coordinates top left is firts moving clockwise (vh is viewport height)*/
+//         clip-path: polygon(0 0, 100% 0 , 100% 75vh, 0 100%);
+//         height: 95vh;
+//     }
+//     // means when the screen is larger than 192 dpi and the width is > 600 px it will load the larger image
+// // the comma acts like an or so you can put two media queries together
+// // Media queries are alway in em 2000/16=125
+
+// @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
+//         only screen and (-webkit-min-device-pixel-ratio:2) and (min-width: 37.5em),
+//         only screen and (min-width: 125em)
+
+// {
+//     background-image: linear-gradient(to right bottom, rgba($color-primary-light, 0.8), rgba($color-primary-dark, 0.8)),  
+//     url(../img/hero.jpg);
+// }
+   
+//     @include respond(phone){
+//         -webkit-clip-path: polygon(0 0, 100% 0 , 100% 85vh, 0 100%);
+//         /* you have to define the 4 polygon coordinates top left is firts moving clockwise (vh is viewport height)*/
+//         clip-path: polygon(0 0, 100% 0 , 100% 85vh, 0 100%);
+         
+//      }   
+// &__logo-box{
+//     position: absolute; 
+//     /* will position based on the parent which is header */
+//     top: 4rem;
+//     left: 4rem;
+// } 
+// &__logo{
+//     height: 6.5rem;
+// }
+// &__text-box{
+//     position: absolute;
+//     top: 40%;
+//     /* normally 50 % but because of wedge we will move text up to 40% welps with the illusion */
+//     left: 50%;
+//     /* transform -50% will center the text not based on parent but on the actual text */
+//     transform: translate(-50%, -50%);
+//     text-align: center;
+// }
+// }
+
+// .header__bonaire-photo{
+//     height: 55vh;
+//     /* linear grad pramater 1 direction  parm 2 two colors (opacity is done with the color editor first slider when the slider opens maks sure you are on rgba) pram 3 the image */
+//     background-image: linear-gradient(
+//         to right bottom,
+//         rgba($color-secondary-light, 0.8),
+//         rgba($color-yellow-dark, 0.8)),
+//     url(../img/travel.jpg);
+//     background-size: cover;
+//     background-position: top;
+//     /* header is the parent of logobox */
+//     position: relative;
+
+
+//     @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)){
+//         -webkit-clip-path: polygon(0 0, 100% 0 , 100% 75vh, 0 100%);
+//         /* you have to define the 4 polygon coordinates top left is firts moving clockwise (vh is viewport height)*/
+//         clip-path: polygon(0 0, 100% 0 , 100% 75vh, 0 100%);
+//         height: 95vh;
+//     }
+//     // means when the screen is larger than 192 dpi and the width is > 600 px it will load the larger image
+// // the comma acts like an or so you can put two media queries together
+// // Media queries are alway in em 2000/16=125
+
+// @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
+//         only screen and (-webkit-min-device-pixel-ratio:2) and (min-width: 37.5em),
+//         only screen and (min-width: 125em)
+
+// {
+//     background-image: linear-gradient(to right bottom, rgba($color-primary-light, 0.8), rgba($color-primary-dark, 0.8)),  
+//     url(../img/hero.jpg);
+// }
+   
+//     @include respond(phone){
+//         -webkit-clip-path: polygon(0 0, 100% 0 , 100% 85vh, 0 100%);
+//         /* you have to define the 4 polygon coordinates top left is firts moving clockwise (vh is viewport height)*/
+//         clip-path: polygon(0 0, 100% 0 , 100% 85vh, 0 100%);
+         
+//      }   
+// &__logo-box{
+//     position: absolute; 
+//     /* will position based on the parent which is header */
+//     top: 4rem;
+//     left: 4rem;
+// } 
+// &__logo{
+//     height: 6.5rem;
+// }
+// &__text-box{
+//     position: absolute;
+//     top: 40%;
+//     /* normally 50 % but because of wedge we will move text up to 40% welps with the illusion */
+//     left: 50%;
+//     /* transform -50% will center the text not based on parent but on the actual text */
+//     transform: translate(-50%, -50%);
+//     text-align: center;
+// }
+// }
+
+// .header__cozumel-photo{
+//     height: 55vh;
+//     /* linear grad pramater 1 direction  parm 2 two colors (opacity is done with the color editor first slider when the slider opens maks sure you are on rgba) pram 3 the image */
+//     background-image: linear-gradient(
+//         to right bottom,
+//         rgba($color-secondary-light, 0.8),
+//         rgba($color-yellow-dark, 0.8)),
+//     url(../img/travel.jpg);
+//     background-size: cover;
+//     background-position: top;
+//     /* header is the parent of logobox */
+//     position: relative;
+
+
+//     @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)){
+//         -webkit-clip-path: polygon(0 0, 100% 0 , 100% 75vh, 0 100%);
+//         /* you have to define the 4 polygon coordinates top left is firts moving clockwise (vh is viewport height)*/
+//         clip-path: polygon(0 0, 100% 0 , 100% 75vh, 0 100%);
+//         height: 95vh;
+//     }
+//     // means when the screen is larger than 192 dpi and the width is > 600 px it will load the larger image
+// // the comma acts like an or so you can put two media queries together
+// // Media queries are alway in em 2000/16=125
+
+// @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
+//         only screen and (-webkit-min-device-pixel-ratio:2) and (min-width: 37.5em),
+//         only screen and (min-width: 125em)
+
+// {
+//     background-image: linear-gradient(to right bottom, rgba($color-primary-light, 0.8), rgba($color-primary-dark, 0.8)),  
+//     url(../img/hero.jpg);
+// }
+   
+//     @include respond(phone){
+//         -webkit-clip-path: polygon(0 0, 100% 0 , 100% 85vh, 0 100%);
+//         /* you have to define the 4 polygon coordinates top left is firts moving clockwise (vh is viewport height)*/
+//         clip-path: polygon(0 0, 100% 0 , 100% 85vh, 0 100%);
+         
+//      }   
+// &__logo-box{
+//     position: absolute; 
+//     /* will position based on the parent which is header */
+//     top: 4rem;
+//     left: 4rem;
+// } 
+// &__logo{
+//     height: 6.5rem;
+// }
+// &__text-box{
+//     position: absolute;
+//     top: 40%;
+//     /* normally 50 % but because of wedge we will move text up to 40% welps with the illusion */
+//     left: 50%;
+//     /* transform -50% will center the text not based on parent but on the actual text */
+//     transform: translate(-50%, -50%);
+//     text-align: center;
+// }
+// }

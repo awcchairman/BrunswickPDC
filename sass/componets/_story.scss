@@ -1,0 +1,110 @@
+.story{
+    width: 75%;
+    margin: 0 auto;
+    box-shadow: 0 3rem 6rem rgba($color-black, .1);
+    // changed bg color to rgba so we could put opacity on stories box color without affecting the text opacity
+    background-color: rgba($color-white, .6);
+    border-radius: 3px;
+    padding: 6rem;
+    padding-left: 9rem;
+    font-size: $default-font-size;
+    transform: skewX(-12deg);
+    
+    @include respond(tab-port){
+        width: 100%;
+        padding: 4rem;
+        padding-left: 7rem;
+}
+    @include respond(phone){
+    transform: skewX(0);
+}
+
+    //to unskew things inside the box  tis will not work for the image since it already has a transform so have to add to end of transform and add &__text
+    // & > *{
+    //     transform: skewX(12deg);
+    // }
+
+    &__shape{
+        // must have a with and height for the shape to work and it must be floated
+        width: 15rem;
+        height:15rem;        
+        float: left;
+        //moves the circle left
+        // cant have 2 transforms so have to add skew to the end 
+        transform: translateX(-3rem) skewX(12deg);;
+        position: relative;
+        overflow: hidden;
+        border-radius: 50%;
+
+        @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)){
+            -webkit-clip-path: circle(50% at 50% 50%);
+            //this makes the circle
+        clip-path: circle(50% at 50% 50%);
+        // radious center
+        -webkit-shape-outside: circle(50% at 50% 50%); 
+        // this only defines where the content flows around the element in this cass a circle
+        shape-outside: circle(50% at 50% 50%);
+        border-radius: none;
+        }
+
+        @include respond(phone){
+            transform: translateX(-3rem) skewX(0);
+        }
+
+
+    }
+
+    &__img{
+        //since picture is taller than the width use height 100%
+        height: 100%;
+        transform: translateX(-1rem) scale(1.4);
+        backface-visibility: hidden;
+        transition: all .5s;
+
+
+        
+    }
+    &__img1{
+        height: 100%;
+        transform: translateX(2rem) scale(1.4);
+        backface-visibility: hidden;
+        transition: all .5s;
+    }
+
+    &__text{
+        transform: skewX(12deg);
+
+        @include respond(phone){
+            transform: skewX(0);
+        }
+    }
+    &__caption{
+        // this is the pre hover state so name will not show until the hover opacity 0
+        position: absolute;
+        top: 50%;
+        left:50%;
+        transform: translate(-50%, 20%);
+        color: $color-white;
+        text-transform: uppercase;
+        font-size: 1.7rem;
+        text-align: center;
+        opacity: 0;
+        transition: all .5s;
+        backface-visibility: hidden;
+    }
+    &:hover &__caption{
+        opacity: 1;
+        transform: translate(-50%, -50%);
+        
+    }
+    &:hover &__img{ 
+        transform: translateX(1rem) scale(1);
+        filter: blur(3px) brightness(80%);
+
+    }
+    &:hover &__img1{ 
+        transform: translateX(1) scale(1);
+        filter: blur(3px) brightness(80%);
+
+    }
+}

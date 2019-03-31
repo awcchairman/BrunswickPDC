@@ -1,340 +1,812 @@
 <!DOCTYPE html>
-<html>
 
-<head>
-  <meta charset="utf-8">
-  <title>BPDC</title>
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu|Sacramento" rel="stylesheet">
-  <!-- CSS Stylesheets -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/styles.css">
+<html lang="en">
 
-  <!-- font Awesome -->
-  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
-  <!-- JQuerry-->
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+    <head>
 
-  <!-- Galleria -->
-  <script src="galleria/galleria-1.5.7.min.js"></script>
-  <!-- Bootstrap Scripts -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <meta charset="UTF-8">
+<!-- ths needs to be in code for responsive web design to work -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-</head>
+        
 
-<body>
-  <div class="row">
-    <div class="col" stlye="background-color: red; border: 1px solid;">
-    </div>
-  </div>
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
 
-  <section class="colored-section" id="title">
-    <div class="container-fluid" <!-- Nav Bar -->
-      <nav class="navbar navbar-expand-lg navbar-light ">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-          <img src="images/DiveClub Logo.jpg" width="120" height="80" alt="">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#footer">Contact</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#photos">Photos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#pricing">Travel</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="stuff.html">Stuff</a>
-            </li>
-          </ul>
+
+
+        <link rel="stylesheet" href="css/icon-font.css">
+        <link rel="stylesheet" href="css/style.css">
+
+        <link rel="shortcut icon" type="image/png" href="img/favicon.ico">
+        <script>
+                function closeNav() {
+                  document.getElementById("navi-toggle").checked = false;
+                }
+              </script>
+        
+
+        <title>BPDC</title>
+
+    </head>
+
+    <body>
+        <div class="navigation">
+
+            <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+
+
+
+            <label for="navi-toggle" class="navigation__button">
+
+                <span class="navigation__icon">&nbsp;</span>
+
+            </label>
+
+
+
+            <div class="navigation__background">&nbsp;</div>
+
+
+
+            <nav class="navigation__nav">
+
+                <ul class="navigation__list">
+
+                    <li class="navigation__item"><a href="#about" class="navigation__link" onclick="closeNav()"><span>01</span>About our club</a></li>
+
+                    <li class="navigation__item"><a href="#features" class="navigation__link" onclick="closeNav()"><span>02</span>Features</a></li>
+
+                    <li class="navigation__item"><a href="#photo" class="navigation__link" onclick="closeNav()"><span>03</span>Photos</a></li>
+
+                    <li class="navigation__item"><a href="#section-tours" class="navigation__link" onclick="closeNav()"><span>04</span>Popular trips</a></li>
+
+                    <li class="navigation__item"><a href="#story" class="navigation__link" onclick="closeNav()"><span>05</span>Stories</a></li>
+
+                    <li class="navigation__item"><a href="#join" class="navigation__link" onclick="closeNav()"><span>06</span>Join now</a></li>
+
+                    <li class="navigation__item"><a href="#instructor" class="navigation__link" onclick="closeNav()"><span>07</span>Instructors corner</a></li>
+
+                    </ul>
+
+            </nav>
+
         </div>
-      </nav>
 
-      <!-- Title -->
-      <div class="row">
-        <div class="headings resize col-lg-12 col-md-12 col-sm-12">
-          <div class="">
-            <img class="shark1" src="images/shark0.jpg" alt="shark picture">
-            <img class="shark" src="images/shark.jpg" alt="shark picture">
-            <h1 class="big-heading forward">Brunswick Plantation </h1>
-            <h2 class="title1 forward">SCUBA and Snorkel Club</h2>
-            <h2 class="divingH2 forward">Lets go diving!!</h2>
-            <img class="diver" src="images/sexy silo diver0.jpg" alt="diver silo">
-            <img class="otherShark" src="images/hammerhead otherway.jpg" alt="hammerhead silo">
-          </div>
-        </div>
-      </div>
-  </section>
-
-
-  <!-- Features -->
-
-  <section class:"white-section" id="features">
-    <div class:"container-fluid">
-      <div class="row">
-        <div class="feature-box col-lg-4">
-          <i class="icon fas fa-check-circle fa-4x"></i>
-          <h3 class="feature-title">Easy to join.</h3>
-          <p>Just send an email.</p>
-        </div>
-        <div class="feature-box col-lg-4">
-          <i class="icon fas fa-bullseye fa-4x"></i>
-          <h3 class="feature-title">All Levels.</h3>
-          <p>We have divers from snorklers to instructor.</p>
-        </div>
-        <div class="feature-box col-lg-4">
-          <i class="icon fas fa-heart fa-4x"></i>
-          <h3 class="feature-title">Guaranteed fun.</h3>
-          <p>Find a buddy and go diving!!</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- Testimonials -->
-
-  <section class="colored-section" id="testimonials">
-    <div id="carouselExampleControls" class="carousel slide" data-ride="false">
-      <div class="carousel-inner">
-        <div class="carousel-item active container-fluid">
-          <h2 class="testimonial-text">Two to three trips a year to some really great places. We have a great time with the club!</h2>
-          <img class="testimonial-image" src="images/steve.jpg" alt="Steve-profile">
-          <em>Steve, Calabash</em>
-        </div>
-        <div class="carousel-item container-fluid">
-          <h2 class="testimonial-text">I loved the Philippians. Great resorts and superb diving. All of the club trips are a great time.</h2>
-          <img class="testimonial-image" src="images/patti.jpg" alt="patti-profile">
-          <em>Patti, Calabash</em>
-        </div>
-      </div>
-      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-        <span class="carousel-control-next-icon"></span>
-      </a>
-  </section>
-
-  <!-- Photos -->
-
-  <section class="white-section" id="photos">
-    <div class="row">
-      <div class="col-lg-12 col-md-12">
-        <h2 class=:"section-heading">Enjoy the photos</h2>
-      </div>
-      <div class="photo-column col-lg-3 col-md-6">
-        <div class="photos">
-          <div class="photo-body">
-            <img class="fish" src="images/nudi.jpg" alt="dog image">
-          </div>
-        </div>
-      </div>
-      <div class="photo-column col-lg-3 col-md-6">
-        <div class="Photos">
-          <div class="photo-body">
-            <img class="fish" src="images/cowfish.jpg" alt="dog image">
-          </div>
-        </div>
-      </div>
-      <div class="photo-column col-lg-3 col-md-6">
-        <div class="photos">
-          <img class="fish" src="images/whaleshark.jpg" alt="whaleshark image">
-        </div>
-      </div>
-      <div class="photo-column col-lg-3 col-md-6">
-        <div class="photos">
-          <img class="fish" src="images/nudib.jpg" alt="dog image">
-        </div>
-      </div>
-    </div>
-
-    </div>
-    <button type="button" class="btn btn-dark btn-lg download-button "><a href="photos-gal.html">Philippines Photos</a></button>
-    <button type="button" class="btn btn-dark btn-lg download-button "><a href="indexBonaire.html">Bonaire Photos</a></button>
-    <button type="button" class="btn btn-dark btn-lg download-button "><a href="indexCozumel.html">Cozumel Photos</a></button>
-    </div>
-  </section>
-
-  <!-- Pricing -->
-
-  <section class="colored-section" id="pricing">
-    <div class"row">
-      <h2 class=:"section-heading">Travel for all your diving needs</h2>
-      <p>If we don't go where you want to dive we will plan a future trip there .</p>
-
-      <div class="row">
-        <div class="pricing-column col-lg-3 col-md-6">
-          <div class="card">
-            <div class="card-header">
-              <img src="images/Virginia Scuba.jpg" alt="VA scuba" style="float:right;width:42px;height:42px;">
-              <h3>Grand Cayman </h3>
+        <header class="header"> 
+            <div class="header__logo-box">
+            <img src="img/DiveClub Logo0.jpg" alt="white logo" class="header__logo" >
             </div>
-
-            <div class="card-body">
-              <h2 class="price-text">$1495 pp/do</h2>
-              <p> <strong>April 20-27 2019</strong>
-              </p>
-
-              <p>7 nights stay at 7 Mile Beach</p>
-              <p>Breakfast daily</p>
-              <p>6 days two tank morning boat dives</p>
-              <p>Unlimited shore diving</p>
-              <p>Air fare not included</p>
-              <button type="button" class="btn btn-lg btn-block btn-dark VAscuba"><a href="contactInfoVas.html">Sign Up</a></button>
-            </div>
-          </div>
+            <div class="header__text-box">
+            <h1 class="heading-primary">
+                <span class="heading-primary--main">Brunswick Plantation</span>
+                <span class="heading-primary--sub">SCUBA and Snorkel Club</span>
+                <span class="heading-primary--sub1">Let's go diving </span>
+            </h1>
+            <a href="#section-tours" class="btn btn--white btn--annimated">Discover our trips</a>
         </div>
+        </header>
 
-        <!-- <div class="pricing-column col-lg-3 col-md-6">
-          <div class="card">
-            <div class="card-header">
-              <img src="images/DiveClub Logo.jpg" alt="diveClub" style="float:right;width:62px;height:42px;">
-              <h3>Belize</h3>
-              <a target="_blank" rel="noopener noreferrer" href="https://www.hamanasi.com/belize-all-inclusive-packages/reef-rainforest/"> <strong>Hamanasi</strong> </a>
+        <main>
+
+            <section class="section-about" id="about">
+
+                <div class="u-center-text u-margin-bottom-big">
+
+                    <h2 class="heading-secondary">
+
+                        Exciting travel for adventurous people
+
+                    </h2>
+
+                </div>
+
+
+
+                <div class="row">
+                        <div class="col-1-of-2">
+                            <h3 class="heading-tertiary u-margin-bottom-small">You're going to fall in love with nature</h3>    
+                        
+                    
+                        
+
+                        <p class="paragraph">
+
+                            Nature is all around us both underwater and on land from the largest whale shark to the smallest coral polyp. You are going to see them all.  If you love adventure than you are going to love our trips.
+
+                        </p> 
+                    
+
+
+
+                         <h3 class="heading-tertiary u-margin-bottom-small">Live adventures like you never have before</h3>
+
+                        <p class="paragraph">
+
+                            Drink kava with the local Fiji tribal leaders.  Dive some of the premier reefs in the western hemisphere from Cozumel to Bonaire.  See the ancient ruins of the Yucatan.  Or find you own adventure on our many trips.
+
+                        </p>
+<a href=""></a>
+                    
+<!-- &rarr translates to an arrow -->
+                        <!-- <a href="#" class="btn-text">Learn more &rarr;</a> -->
+
+                    </div> 
+                    
+                            <div class="col-1-of-2">
+                                <!-- .composition>(img.composition__photo.cpmposition__photo--p1)*3 usig emmit
+                                div class="col-1-of-2"  located in componets _compostion> -->
+                                <div class="composition">
+                                    
+                                    <img src="img/coco-photo1.jpg" alt="Photo 1" class="composition__photo composition__photo--p1">
+
+                                    <img src="img/seafan-photo.jpg" alt="Photo 2" class="composition__photo composition__photo--p2">
+        
+                                    <img src="img/wreck-photo1.jpg" alt="Photo 3" class="composition__photo composition__photo--p3">  
+                                 </div>
+                          </div>   
+                          
+                        </section>
+        
+                          <section class="section-features" id="features">
+    
+                    
+    
+                            <div class="row">
+    
+                              <div class="col-1-of-4">
+          
+                                  <div class="feature-box">
+          
+                                      <i class="feature-box__icon icon-basic-world"></i>
+          
+                                      <h3 class="heading-tertiary heading-color u-margin-bottom-small">Explore the world</h3>
+            
+                                        <p class="feature-box__text">
+            
+                                            We have traveled near and far.  Want to do a muck dive in the Philippines, or a drift dive in Cozumel, or a wall dive in Grand Cayman.  Then come along with us.
+            
+                                        </p>
+            
+                                    </div>
+            
+                                </div>
+            
+            
+            
+                                <div class="col-1-of-4">
+            
+                                    <div class="feature-box">
+            
+                                        <i class="feature-box__icon icon-basic-compass"></i>
+            
+                                        <h3 class="heading-tertiary heading-color u-margin-bottom-small">Meet nature</h3>
+            
+                                        <p class="feature-box__text">
+            
+                                            Ever seen a spotted eagle ray or numerous sea turtles on a single dive?  We have so come meet these beautiful creatures on one of our exotic trips.
+            
+                                        </p>
+            
+                                    </div>
+            
+                                </div>
+            
+            
+            
+                                <div class="col-1-of-4">
+            
+                                    <div class="feature-box">
+            
+                                        <i class="feature-box__icon icon-basic-map"></i>
+            
+                                        <h3 class="heading-tertiary heading-color  u-margin-bottom-small">Find your way</h3>
+            
+                                         <p class="feature-box__text">
+            
+                                            Want to be a better diver then get in the water and dive. Expert instruction offered on all trips from either the dive center we dive with or a club instructor.  
+            
+                                        </p>
+            
+                                    </div>
+            
+                                </div>
+            
+            
+            
+                                <div class="col-1-of-4">
+            
+                                    <div class="feature-box">
+            
+                                        <i class="feature-box__icon icon-basic-heart"></i>
+            
+                                        <h3 class="heading-tertiary heading-color u-margin-bottom-small">Live a healthier life</h3>
+            
+                                        <p class="feature-box__text">
+            
+                                            Reduce stress sitting with your toes in the sand and diving in a stress free underwater world.  Leave all your troubles behind and relax.
+            
+                                        </p>
+            
+                                    </div>
+            
+                                </div>
+            
+                            </div>
+            
+                          </section>
+ 
+
+
+                          <section class="section-photo" >
+
+                            <div class="u-center-text u-margin-bottom-big">
+            
+                                <h2 class="heading-secondary" id="photo">
+            
+                                    Photography of our adventures
+            
+                                </h2>
+            
+                            </div>
+
+
+                            <div class="row" id="photo">                                          
+
+                                      <div class="col-1-of-2" >
+                                        <h3 class="heading-tertiary u-margin-bottom-small">Photos by Steve</h3>    
+            
+                                            <p class="paragraph" >
+                    
+                                                Underwater photography has been a passion of mine since 1980 when I snapped my first underwater photo using a Nikonos film camera and no strobe.  Technology has changed a whole lot in the past 40 years. Instant results with digital along with much better cameras and strobes has improved my photographs immensely.  I hope you enjoy the photos.
+                    
+                                            </p> 
+            
+                                        <h3 class="heading-tertiary u-margin-bottom-small">Patti's Photography</h3>
+            
+                                            <p class="paragraph" >
+                    
+                                                I have always loved searching for the small stuff on the reef and with that passion came my love of macro-photography.  I started underwater photography about 3 years ago on a trip to Roatan.  From that very first shot I was hooked and cannot get enough photographing the small stuff from muck diving in the Philippines to catching a blenny on a drift dive in Cozumel. Enjoy my shots.
+                                            </p>
+                                        <!-- &rarr translates to an arrow -->
+                                        
+                                         </div> 
+
+                                         <div class="col-1-of-2">
+                                            <!-- located in componets _compostion -->
+                                            <div class="composition">
+                                                <img src="img/PI-photo.jpg" alt="Photo 1" class="composition__photo composition__photo--p1">
+            
+                                                <img src="img/trunkfish-photo.jpg" alt="Photo 2" class="composition__photo composition__photo--p2">
+                    
+                                                <img src="img/christmastree-photo.jpg" alt="Photo 3" class="composition__photo composition__photo--p3">  
+                                             </div>
+                                      </div> 
+                                      
+                                </div>
+
+
+                                <div class="row">
+                                <div class="col-1-of-3">       
+                                <a href="indexBonaire.html" class="btn-text">Bonaire Photos &rarr;</a>
+                            </div>
+                                <div class="col-1-of-3"> 
+                                        <a href="photos-gal.html" class="btn-text">Philippines Photos &rarr;</a>
+                                    </div>
+                                        <div class="col-1-of-3"> 
+                                        <a href="indexCozumel.html" class="btn-text">Cozumel Photos &rarr;</a>
+                                    </div>
+                                </div>
+
+ </section>
+
+
+
+    <!-- located in home -->
+                          <section class="section-tours" id="section-tours">
+    
+                            <div class="u-center-text u-margin-bottom-big">
+            <!-- located typography -->
+                                <h2 class="heading-alternate">
+            
+                                  Upcoming trips
+            
+                                </h2>
+            
+                            </div>
+<!-- ///////////////////////////////////TRIP 1///////////////////////////////////////////////////////////////////////////////////////// -->
+                            <div class="row">
+                                <div class="col-1-of-3">
+                                   <div class="card">
+                                       <div class="card__side card__side--front">
+                                            <div class="card__picture card__picture--1">
+                                                &nbsp;
+                                            </div>
+                                            <h4 class="card__heading">
+                                                <span class="card__heading-span card__heading-span--1">Cat Ppalu Bahamas</span>
+                                            </h4>
+                                            <div class="card__details">
+                                                    <h5 class="Card__tripdate">Jun 22-28 2019</h5>
+                                                <ul>
+                                                    <li>20 dive Adventure</li>
+                                                    <li>Up to 12 people</li>
+                                                    <li>All Meals</li>
+                                                    <li>6 Private cabins</li>
+                                                    <li>Live aboard</li>
+                                                    <li>Air fare not included</li>
+                                                </ul>
+                                            </div>
+                                       </div>
+                                       <div class="card__side card__side--back card__side--back-1">
+                                            <img src="img/Virginia-Scuba-logo.png" alt="VA scuba" style="float:right;width:42px;height:42px;">
+                                            <div class="card__cta">
+                                                <div class="card__price-box">
+                                                    <p class="card__price-only">Only</p>
+                                                    <p class="card__price-value">$1825</p>
+                                                </div>
+                                                <a href="contactInfoVas.html" class="btn btn--white">More Info</a>
+                                            </div>
+                                        </div>
+                                   </div>
+                                </div>
+            
+ <!-- ///////////////////////////////////TRIP 2///////////////////////////////////////////////////////////////////////////////////////// -->           
+                                <div class="col-1-of-3">
+                                    <div class="card">
+                                        <div class="card__side card__side--front">
+                                            <div class="card__picture card__picture--2">
+                                                &nbsp;
+                                            </div>
+                                            <h4 class="card__heading">
+                                                <span class="card__heading-span card__heading-span--2">Roatan</span>
+                                            </h4>
+                                            <div class="card__details">
+                                                    <h5 class="Card__tripdate">Oct 12-19 2019</h5>
+                                                <ul>
+                                                        <li>7 Night Accommodations</li>
+            
+                                                        <li>Ground Transfers from and to Airport</li>
+                
+                                                        <li>3 Meals Daily</li>
+                
+                                                        <li>4 Daily Boat Dives</li>
+                
+                                                        <li>Air fare not included</li>
+                                            </div>
+            
+                                        </div>
+                                        <div class="card__side card__side--back card__side--back-2">
+                                                <img src="img/Virginia-Scuba-logo.png" alt="VA scuba" style="float:right;width:42px;height:42px;">
+                                                <div class="card__cta">
+                                                    <div class="card__price-box">
+                                                            <a class="card__resort" target="_blank" rel="noopener noreferrer" href="https://www.cocoviewresort.com/"> <strong>CoCo View</strong> </a>
+                                                        <p class="card__price-only">Only</p>
+                                                        <p class="card__price-value">$1500</p>
+                                                    </div>
+                                                    <a href="contactInfoVas.html" class="btn btn--white">More Info</a>
+                                                </div>
+                                            </div>
+                                    </div>
+                                </div>
+  <!-- ///////////////////////////////////TRIP 3///////////////////////////////////////////////////////////////////////////////////////// -->             
+            
+                                <div class="col-1-of-3">
+                                    <div class="card">
+                                        <div class="card__side card__side--front">
+                                            <div class="card__picture card__picture--3">
+                                                &nbsp;
+                                            </div>
+                                            <h4 class="card__heading">
+                                                <span class="card__heading-span card__heading-span--3">Cozumel</span>
+                                            </h4>
+                                            <div class="card__details">
+                                                    <h5 class="Card__tripdate">Oct 26-Nov 2 2019</h5>
+                                                <ul>
+                                                        <li>7 Night Accommodations</li>
+                
+                                                        <li>Ground Transfers from and to Airport</li>
+                
+                                                        <li>All Inclusive</li>
+                
+                                                        <li>2 Daily Dives free NITROX</li>
+                
+                                                        <li>Air fare not included</li>
+                                                </ul>
+                                            </div>
+            
+                                        </div>
+                                        <div class="card__side card__side--back card__side--back-3">
+                                                <img src="img/DiveClub Logo.jpg" alt="Dive Club Logo" style="float:right;width:42px;height:42px;">
+                                            <div class="card__cta">
+                                                <div class="card__price-box">
+                                                        <a class="card__resort" target="_blank" rel="noopener noreferrer" href="https://www.barcelo.com/es/allegro-hotels/hoteles/mexico/cozumel/allegro-cozumel/"> <strong>Allegro</strong> </a>
+                                                    <p class="card__price-only">Only</p>
+                                                    <p class="card__price-value">$912</p>
+                                                </div>
+                                                <a href="contactInfo.html" class="btn btn--white">More Info</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <div class="u-center-text u-margin-top-huge">
+                                <a href="moreTravel.html" class="btn btn--green">Discover more trips</a>
+
+                                <a href="pastTravel.html" class="btn btn--green">Where we have been</a>
+                            </div>
+                        </section>
+
+
+            
+                        </section>
+            
+            
+            
+                        <section class="section-stories" id="story">
+            
+                            <div class="bg-video">
+            
+                                <video class="bg-video__content" autoplay muted loop>
+            
+                                    <source src="img/video.mp4" type="video/mp4">
+            
+                                    <source src="img/video.webm" type="video/webm">
+            
+                                    Your browser is not supported!
+            
+                                </video>
+            
+                            </div>
+            
+            
+            
+                            <div class="u-center-text u-margin-bottom-big">
+            
+                                <h2 class="heading-secondary">
+            
+                                    We make people genuinely happy
+            
+                                </h2>
+            
+                            </div>
+            
+            
+            
+                            <div class="row">
+            
+                                <div class="story">
+            
+                                    <figure class="story__shape">
+            
+                                        <img src="img/steve.jpg" alt="Person on a tour" class="story__img">
+            
+                                        <figcaption class="story__caption">Steve Manzana</figcaption>
+            
+                                    </figure>
+            
+                                    <div class="story__text">
+            
+                                        <h3 class="heading-tertiary u-margin-bottom-small">I had the best week ever with my dive family</h3>
+            
+                                        <p>
+            
+                                                A week in Bonaire with 8 of your best friends is truly magical.  On this trip we dove 3 to 4 site a day and saw some incredible underwater creatures.  Corals of all different colors and fish of all sizes.  This club knows how to do it right and I will be on many more trips.            
+                                        </p>
+            
+                                    </div>
+            
+                                </div>
+            
+                            </div>
+            
+            
+            
+                            <div class="row">
+            
+                                <div class="story" id="story">
+            
+                                    <figure class="story__shape">
+            
+                                        <img src="img/patti.jpg" alt="Person on a tour" class="story__img1">
+            
+                                        <figcaption class="story__caption">Patti</figcaption>
+            
+                                    </figure>
+            
+                                    <div class="story__text">
+            
+                                        <h3 class="heading-tertiary u-margin-bottom-small">WOW! 6 trips and 6 wonderful adventures</h3>
+            
+                                        <p>
+            
+                                                With the club I have dove from the Caribbean to the Philippines all truly exceptional trips.  The fellowship and dive activities are all second to none.  I can't wait for the next trip.
+            
+
+            
+                                        </p>
+            
+                                    </div>
+            
+                                </div>
+            
+                            </div>
+            
+            
+            
+                            <div class="u-center-text u-margin-top-huge">
+            
+                                <!-- <a href="#" class="btn-text">Read all stories &rarr;</a>
+             -->
+                            </div>
+            
+                        </section>
+            
+            
+            
+                        <section class="section-book" id="join">
+            
+                            <div class="row">
+            
+                                <div class="book">
+            
+                                    <div class="book__form">
+            
+                                        <form action="#" class="form">
+            
+                                            <div class="u-margin-bottom-medium">
+            
+                                                <h2 class="heading-secondary">
+            
+                                                    Join now!
+            
+                                                </h2>
+            
+                                            </div>
+
+                                            <div class="heading-tertiary u-margin-bottom-small">
+                                                I hope you like what you see, the bonus is you get all this for free.  No dues and every thing is pay as you go (so far no one has paid for anything except the trips that they have gone on). So what are you waiting for join now!!! 
+                                            </div>
+            
+            
+            
+                                            <!-- <div class="form__group">
+            
+                                                <input type="text" class="form__input" placeholder="Full name" id="name" required>
+            
+                                                <label for="name" class="form__label">Full name</label>
+            
+                                            </div>
+            
+            
+            
+                                            <div class="form__group">
+            
+                                                <input type="email" class="form__input" placeholder="Email address" id="email" required>
+            
+                                                <label for="email" class="form__label">Email address</label>
+            
+                                            </div> -->
+            
+            
+            
+                                            <!-- <div class="form__group u-margin-bottom-medium">
+            
+                                                <div class="form__radio-group">
+            
+                                                    <input type="radio" class="form__radio-input" id="small" name="size">
+            
+                                                    <label for="small" class="form__radio-label">
+            
+                                                        <span class="form__radio-button"></span>
+            
+                                                        Small tour group
+            
+                                                    </label>
+            
+                                                </div> -->
+            
+            
+            
+                                                <!-- <div class="form__radio-group">
+            
+                                                    <input type="radio" class="form__radio-input" id="large" name="size">
+            
+                                                    <label for="large" class="form__radio-label">
+            
+                                                        <span class="form__radio-button"></span>
+            
+                                                        Large tour group
+            
+                                                    </label>
+            
+                                                </div> -->
+            
+                                            </div>
+            
+            
+            
+                                            <div class="form__group">
+                                                <a href="contactInfo.html" class="btn btn--green">Join!</a>
+                                               
+            
+                                            </div>
+            
+                                        </form>
+            
+                                    </div>
+            
+                                </div>
+            
+                            </div>
+            
+                        </section>
+
+                        <div class="row" id="instructor">
+                               
+                                
+                                  <section class="instructor__corner" >
+
+                                
+                                  <h2 class="heading-secondary u-margin-bottom-small">Instructor corner</h2>    
+      
+                                      <p class="paragraph">
+              
+                                          
+                                            Scuba diving is an activity where the margin of error can be very small.  To help reduce risk divers need to keep up on skills and evaluate their physical conditioning before they hit the water.  I intend to use this space to post articles that I think will enhance your joy of diving and instill confidence in your abilities.  Remember if you feel your skills are rusty see a dive professional to refresh your abilities.
+
+
+                                      </p> 
+      
+                                      <a href="stuff.html" class="btn-text">Dive talk  &rarr;</a>
+                                  <!-- &rarr translates to an arrow -->
+                                  
+                                   </div> 
+
+                                    
+                                
+                          
+                         
+
+
+                    </section>   
+            
+                    </main>
+
+                    <footer class="footer">
+
+                      <div class="footer__logo-box">
+          
+          
+          
+                          <div class="footer__logo">
+                              
+                                <em class="footer__em">Affiliated with</em>
+                            
+                                <img src="img/Virginia-Scuba-logo.png" alt="VA scuba" style="width:8rem;height:9rem;">
+                                <em>Manassas VA</em>
+          
+                              <!-- <source srcset="img/Virginia-Scuba-logo.png 1x, img/Virginia-Scuba-logo.png"
+          
+                                      media="(max-width: 5.5em)">
+          
+                              <img srcset="img/Virginia-Scuba-logo.png, img/Virginia-Scuba-logo.png" alt="Full logo" src="img/Virginia-Scuba-logo.png"> -->
+          
+                          </div>
+                          
+                         
+                      </div>
+  
+             
+      
+                      <div class="col-1-of-2">
+      
+                          <p class="footer__copyright">
+      
+                              Content by <a href="#" class="footer__link">Steve Manzana</a> design by  <a href="#" class="footer__link">Jonas Schmedtmann</a>for his online course <a href="#" class="footer__link">Advanced CSS and Sass</a>.
+      
+                              Copyright &copy;2019 
+      
+                          </p>
+      
+                      </div>
+      
+                  </div>
+      
+              </footer>
+              <!-- <div class="popup" id="popup">
+
+                  <div class="popup__content">
+      
+                      <div class="popup__left">
+      
+                          <img src="img/nat-8.jpg" alt="Tour photo" class="popup__img">
+      
+                          <img src="img/nat-9.jpg" alt="Tour photo" class="popup__img">
+      
+                      </div> -->
+      
+                     
+      
+                          <a href="#" class="btn btn--green">Book now</a>
+      
+                      </div>
+      
+                  </div> -->
+      
+              <!-- </div> -->
+                
+        
+
+
+
+        <!-- <section class="grid-test">
+            <div class="row">
+              <div class="col-1-of-2">
+                Col 1 of 2    
+                   </div>
+              <div class="col-1-of-2">
+                Col 1 of 2    
+                   </div>
             </div>
+            
+            <div class="row">
+              <div class="col-1-of-3">
+                Col 1 of 3   
+                   </div>
+              <div class="col-1-of-3">
+                Col 1 of 3   
+                   </div>
+              <div class="col-1-of-3">
+                Col 1 of 3   
+                   </div>
+                </div>
+               <div class="row">
+              <div class="col-1-of-3">
+                Col 1 of 3   
+                   </div>
+              <div class="col-2-of-3">
+                Col 2 of 3   
+                   </div>
+                </div>
+                   <div class="row">
+                    <div class="col-1-of-4">
+                      Col 1 of 4   
+                         </div>
+                    <div class="col-1-of-4">
+                      Col 1 of 4   
+                         </div>
+                    <div class="col-1-of-4">
+                      Col 1 of 4  
+                    </div>  
+                    <div class="col-1-of-4">
+                        Col 1 of 4  
+                      </div> 
+                    </div>
+                      <div class="row">
+                        <div class="col-1-of-4">
+                          Col 1 of 4   
+                             </div>
+                        <div class="col-1-of-4">
+                          Col 1 of 4   
+                             </div>
+                        <div class="col-2-of-4">
+                          Col 2 of 4  
+                        </div> 
+                    </div>
+                        <div class="row">
+                            <div class="col-1-of-4">
+                              Col 1 of 4   
+                                 </div>
+                            <div class="col-3-of-4">
+                              Col 3 of 4   
+                                 </div>
+                           
+                        </div> -->
+            
+            
+            
+          </section>
 
-            <div class="card-body">
-              <h2 class="price-text">$2108 pp/do</h2>
-              <p> <strong>Aug 10-17 2019</strong> </p>
-              <p>7 Night Accommodations</p>
-              <p>Five (5) adventures of your choice</p>
-              <p>Roundtrip air transfers Belize City to Dangriga</p>
-              <p>Roundtrip ground transfers from Dangriga to Hamanasi</p>
-              <p>3 Meals Daily</p>
-              <p>Air fare not included</p>
-              <button type="button" class="btn btn-lg btn-block btn-dark BPDC"><a href="contactInfo.html">Sign Up</a></button>
-            </div>
-          </div>
-        </div> -->
-
-        <!-- <div class="pricing-column col-lg-3 col-md-6">
-          <div class="card">
-            <div class="card-header">
-              <img src="images/DiveClub Logo.jpg" alt="diveClub" style="float:right;width:62px;height:42px;">
-              <h3>Belize</h3>
-
-              <a target="_blank" rel="noopener noreferrer" href="http://ramons.com/"> <strong>Ramon's Village</strong> </a>
-            </div>
-
-            <div class="card-body">
-              <h2 class="price-text">$1197 pp/do</h2>
-              <p><strong>Aug 17-24 2019</strong> </p>
-              <p>7 Night Accommodations</p>
-              <p>Ground/Air Transfers to Island</p>
-              <p>Breakfast Daily</p>
-              <p>2 Daily Dives</p>
-              <p>Air fare not included</p>
-              <button type="button" class="btn btn-lg btn-block btn-dark BPDC"><a href="contactInfo.html">Sign Up</a></button>
-            </div>
-          </div>
-        </div> -->
-
-        <div class="pricing-column col-lg-3 col-md-6">
-          <div class="card">
-            <div class="card-header">
-              <img src="images/Virginia Scuba.jpg" alt="diveClub" style="float:right;width:42px;height:42px;">
-              <h3>Roatan</h3>
-
-              <a target="_blank" rel="noopener noreferrer" href="https://www.cocoviewresort.com/"> <strong>CoCo View Resort</strong> </a>
-            </div>
-            <div class="card-body">
-              <h2 class="price-text">$1500 pp/do</h2>
-              <p><strong>Oct 12-19 2019</strong></p>
-              <p>7 Night Accommodations</p>
-              <p>Ground Transfers from and to Airport</p>
-              <p>3 Meals Daily</p>
-              <p>4 Daily Boat Dives</p>
-              <p>Air fare not included</p>
-              <button type="button" class="btn btn-lg btn-block btn-dark BPDC"><a href="contactInfo.html">Sign Up</a></button>
-            </div>
-          </div>
-        </div>
-
-        <div class="pricing-column col-lg-3 col-md-6">
-          <div class="card">
-            <div class="card-header">
-              <img src="images/DiveClub Logo.jpg" alt="diveClub" style="float:right;width:62px;height:42px;">
-              <h3>Cozumel</h3>
-              <a target="_blank" rel="noopener noreferrer" href="https://www.barcelo.com/es/allegro-hotels/hoteles/mexico/cozumel/allegro-cozumel/"> <strong>Cozumel Alegro</strong> </a>
-            </div>
-
-            <div class="card-body">
-              <h2 class="price-text">$912 pp/do</h2>
-              <p><strong>Oct 26-Nov 2 2019</strong></p>
-              <p>7 Night Accommodations</p>
-              <p>Ground Transfers from and to Airport</p>
-              <p>All Inclusive</p>
-              <p>2 Daily Dives free NITROX</p>
-              <p>Air fare not included</p>
-              <button type="button" class="btn btn-lg btn-block btn-dark BPDC"><a href="contactInfo.html">Sign Up</a></button>
-            </div>
-          </div>
-        </div>
-
-        <div class="pricing-column col-lg-3 col-md-6">
-          <div class="card">
-            <div class="card-header">
-              <img src="images/Virginia Scuba.jpg" alt="VA scuba" style="float:right;width:42px;height:42px;">
-              <h3>Fiji</h3>
-
-              <a target="_blank" rel="noopener noreferrer" href="https://www.beqalagoonresort.com/"> <strong>Beqa Lagoon</strong> </a>
-            </div>
-            <div class="card-body">
-              <h2 class="price-text">$4880 pp/do</h2>
-              <p><strong>March 21 to April 4 2020</strong></p>
-              <p>2 week accommodations</p>
-              <p>3 meals daily</p>
-              <p>9 two tank boat dives</p>
-              <p> Unlimited shore diving</p>
-              <p>1 two tank shark dive</p>
-              <p>Air fare from LA <strong>included</strong> </p>
-              <button type="button" class="btn btn-lg btn-block btn-dark VAscuba"><a href="contactInfoVas.html">Sign Up</a></button>
-            </div>
-          </div>
-        </div>
-
-        <button type="button" class="btn btn-dark btn-lg download-button back"><a href="pastTravel.html">Past Travel</a></button>
-
-      </div>
-  </section>
-  <!-- Call to Action -->
-
-  <section class="white-section" id="cta">
-    <div class"container-fluid">
-      <h3 class="big-heading">Find diving happiness with Brunswick Plantation Dive club.</h3>
-      <button type="button" class="btn btn-dark btn-lg download-button"><a href="contactInfo.html">Join today</a></button>
-      <!-- <button type="button" class="btn btn-light btn-lg download-button "><a href="photos-gal.html">More Photos</a></button> -->
-    </div>
-
-  </section>
-
-  <section class="colored-section" id="stuff">
-    <div class"container-fluid">
-      <h3 class="big-heading">Diving related Stuff</h3>
-      <button type="button" class="btn btn-dark btn-lg download-button"><a href="stuff.html">Stuff</a></button>
-      <!-- <button type="button" class="btn btn-light btn-lg download-button "><a href="photos-gal.html">More Photos</a></button> -->
-    </div>
-
-  </section>
-
-  <!-- Footer -->
-  <div class"container-fluid">
-    <footer class="white-section" id="footer">
-      <em>Affiliated with</em>
-      <img class="VAS-logo" src="images/Virginia Scuba white.jpg" alt="VAS-logo">
-      <em>Manassas VA</em>
-      <p class="Copyright">© Copyright 2019 BPDC</p>
-
-  </div>
-  </footer>
-  <script src="index.js" charset="utf-8"></script>
-</body>
+    </body>
 
 </html>

@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>BPDC</title>
+
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu|Sacramento" rel="stylesheet">
   <!-- CSS Stylesheets -->
@@ -21,45 +21,102 @@
   <!-- Bootstrap Scripts -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+  <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
 
+
+
+  <link rel="stylesheet" href="css/icon-font.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <link rel="shortcut icon" type="image/png" href="img/favicon.ico">
+  <script>
+          function closeNav() {
+            document.getElementById("navi-toggle").checked = false;
+          }
+        </script>
+  
+
+  <title>Instructor corner</title>
 </head>
-<body>
-  <div class="yoga">
-    <div class="">
 
 
- <img src="images/master-breathing.jpg" alt="5Terre" width="340" height="120">
+<body class="container">
+
+    <header class="header header__instructor"> 
+        <div class="header__logo-box">
+        <img src="img/DiveClub Logo0.jpg" alt="white logo" class="header__logo" >
+        </div>
+        <div class="header__text-box">
+        <h1 class="heading-primary">
+            <span class="heading-primary--main">Brunswick Plantation</span>
+            <span class="heading-primary--sub">SCUBA and Snorkel Club</span>
+            <span class="heading-primary--sub1">Instructor corner </span>
+        </h1>
+        <a href="#instructor" class="btn btn--white btn--annimated">Good stuff</a>
+    </div>
+    </header>
+
+<section class="instructor" id="instructor">
+<div class="instruct">
+    <img src="img/master-breathing.jpg" alt="Breathe" class="instruct__img">
+    <h5 class="instruct__name"><strong>Better Breathing Techniques</strong>  </h5>
+    
+
+    <form action="Document/breathe.pdf" method="get">
+      
+      <button class="btn instruct__btn">read article</button>
+      </form>
+    
 </div>
-<a href="Document/breathe.pdf"</a>
+<div class="instruct">
+    <img src="img/NCDiveFlag.jpg" alt="NC Diving" class="instruct__img">
+    <h5 class="instruct__name"><<strong>North Carolina Diving</strong></strong>  </h5>
+    
+
+    <form action="Document/NCDiving.pdf" method="get">
+      
+      <button class="btn instruct__btn btn-green">read article</button>
+    </form>
 </div>
-<p> <strong>Better Breathing Techniques</strong>  </p>
 
-<div class="NCDFlag col-lg-3 col-md-6">
-  <img src="images/NCDiveFlag.jpg" alt="5Terre" width="240" height="60">
-  <a href="Document/NC Diving.pdf"</a>
-  </div>
-  <div class="stuff">
+     
+<div class="instruct">
+    <img src="img/BP Dive clubtravel.jpg" alt="Travel Ideas" class="instruct__img">
+    <h5 class="instruct__name"><<strong>Travel Ideas</strong></strong>  </h5>
+    
 
-
-  <p> <strong>North Carolina Diving</strong> </p>
-   </div>
-<div class="yoga">
-
-
-  <img src="images/BP Dive clubtravel.jpg" alt="5Terre" width="340" height="120">
+    <form action="https://cloud.3dissue.net/11382/11358/11395/10269/index.html?40528" method="get">
+      
+      <button class="btn instruct__btn btn-green">read article</button>
+    </form>
 </div>
-<a href="https://cloud.3dissue.net/11382/11358/11395/10269/index.html?40528" </a>
-<p><strong>Travel Ideas by Caradonna Adventures</strong> </p>
 
-  </div>
+<div class="instruct">
+    <img src="img/BP Dive clubtravel.jpg" alt="Scuba Travel Checklist" class="instruct__img">
+    <h5 class="instruct__name"><<strong>Scuba Travel Checklist</strong></strong>  </h5>
+    
 
-  <br>
+    <form action="http://www2.padi.com/blog/wp-content/uploads/2015/11/Checklist_updated.jpg" method="get">
+      
+      <button class="btn instruct__btn btn-green">read article</button>
+    </form>
+</div>
 
 
-  <button type="button" class="btn btn-dark btn-lg download-button back"><a href="index.html">Back to Home</a></button>
 
+<div class="instruct">
+    <img src="img/frogfish.jpg" alt="Scuba Travel Checklist" class="instruct__img">
+    <h5 class="instruct__name"><<strong>How To Improve Scuba Diving Safety</strong></strong>  </h5>
+    
 
-  <script src="index.js" charset="utf-8"></script>
+    <form action="https://www.scubadiving.com/how-to-improve-scuba-diving-safety-with-checklists" method="get">
+      
+      <button class="btn instruct__btn btn-green">read article</button>
+    </form>
+</div>
+  
 </body>
 
 </html>

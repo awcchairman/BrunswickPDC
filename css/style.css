@@ -1204,6 +1204,8 @@ body {
   .header__PI {
     background-image: linear-gradient(to right bottom, rgba(255, 0, 0, 0.8), rgba(126, 213, 111, 0.8)), url(../img/camera-3.jpg); }
   .header__pt {
+  .header__grandCayman {
+    background-image: linear-gradient(to right bottom, rgba(255, 165, 0, 0.6), rgba(0, 0, 255, 0.8)), url(../img/camera-3.jpg); }
     display: grid;
     grid-column: 1/-1;
     background-image: linear-gradient(to right bottom, rgba(255, 0, 0, 0.8), rgba(126, 213, 111, 0.8)), url(../img/camera-3.jpg); }

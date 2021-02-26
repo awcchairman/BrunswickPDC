@@ -1191,7 +1191,7 @@ body {
      }
   .header_logo {
     height: 6.5rem; 
-    border-radius: 1%;}
+    border-radius: .1%;}
   .header__text-box {
     position: absolute;
     top: 40%;

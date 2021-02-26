@@ -1,5 +1,7 @@
 /*
 
+0/*
+
 0 - 600px:      Phone
 
 600 - 900px:    Tablet portrait
@@ -240,6 +242,7 @@ body {
     padding: 1.5rem 4rem;
     display: inline-block;
     border-radius: 20rem;
+    
     /* transition property has to be on the INITIAL STATE */
     transition: all .2s;
     /* this need to be relative so that the child .btn::after is behind */
@@ -306,52 +309,52 @@ body {
 .rtn-home {
   margin-top: 20rem; }
 
-.composition {
-  position: relative; }
-  .composition__photo {
-    width: 55%;
-    box-shadow: 0 1.5rem 4 rem rgba(0, 0, 0, 0.4);
-    border-radius: 2px;
-    position: absolute;
-    z-index: 10;
-    transition: all .2s;
-    outline-offset: 2rem; }
-    @media only screen and (max-width: 56.25em) {
-      .composition__photo {
-        float: left;
-        position: relative;
-        width: 33.3333333%;
-        box-shadow: 0 1.5 3rem rgba(0, 0, 0, 0.2); } }
-    .composition__photo--p1 {
-      left: 0;
-      top: -1rem; }
+  .composition {
+    position: relative; }
+    .composition__photo {
+      width: 55%;
+      box-shadow: 0 1.5rem 4 rem rgba(0, 0, 0, 0.4);
+      border-radius: 2px;
+      position: absolute;
+      z-index: 10;
+      transition: all .2s;
+      outline-offset: 2rem; }
       @media only screen and (max-width: 56.25em) {
-        .composition__photo--p1 {
-          top: 0rem;
-          transform: scale(1.2); } }
-    .composition__photo--p2 {
-      right: 0;
-      top: 2rem; }
-      @media only screen and (max-width: 56.25em) {
-        .composition__photo--p2 {
-          top: -1rem;
-          transform: scale(1.3);
-          z-index: 100; } }
-    .composition__photo--p3 {
-      left: 20%;
-      top: 10rem; }
-      @media only screen and (max-width: 56.25em) {
-        .composition__photo--p3 {
-          top: 1rem;
-          left: 0;
-          transform: scale(1.1); } }
-    .composition__photo:hover {
-      outline: 1.5rem solid #287fc5;
-      transform: scale(1.05);
-      box-shadow: 0 2.5rem 4 rem rgba(0, 0, 0, 0.5);
-      z-index: 20; }
-  .composition:hover .composition__photo:not(:hover) {
-    transform: scale(0.9); }
+        .composition__photo {
+          float: left;
+          position: relative;
+          width: 33.3333333%;
+          box-shadow: 0 1.5 3rem rgba(0, 0, 0, 0.2); } }
+      .composition__photo--p1 {
+        left: 0;
+        top: -1rem; }
+        @media only screen and (max-width: 56.25em) {
+          .composition__photo--p1 {
+            top: 0rem;
+            transform: scale(1.2); } }
+      .composition__photo--p2 {
+        right: 0;
+        top: 2rem; }
+        @media only screen and (max-width: 56.25em) {
+          .composition__photo--p2 {
+            top: -1rem;
+            transform: scale(1.3);
+            z-index: 100; } }
+      .composition__photo--p3 {
+        left: 20%;
+        top: 10rem; }
+        @media only screen and (max-width: 56.25em) {
+          .composition__photo--p3 {
+            top: 1rem;
+            left: 0;
+            transform: scale(1.1); } }
+      .composition__photo:hover {
+        outline: 1.5rem solid #287fc5;
+        transform: scale(1.05);
+        box-shadow: 0 2.5rem 4 rem rgba(0, 0, 0, 0.5);
+        z-index: 20; }
+    .composition:hover .composition__photo:not(:hover) {
+      transform: scale(0.9); }
 
 .popup {
   height: 100vh;
@@ -1180,14 +1183,15 @@ body {
       -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
       /* you have to define the 4 polygon coordinates top left is firts moving clockwise (vh is viewport height)*/
       clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%); } }
-  .header__logo-box {
+  .header_logo-box {
     position: absolute;
     /* will position based on the parent which is header */
     top: 4rem;
-    left: 4rem; }
-  .header__logo {
-    height: 6.5rem;
-border-radius: 1%;}
+    left: 4rem;
+     }
+  .header_logo {
+    height: 6.5rem; 
+    border-radius: 1%;}
   .header__text-box {
     position: absolute;
     top: 40%;
@@ -1215,7 +1219,7 @@ border-radius: 1%;}
     grid-column: 1/-1;
     background-image: linear-gradient(to right bottom, rgba(132, 199, 238, 0.8), rgba(132, 199, 238, 0.8)), url(../img/knowledge1.jpg); }
 
- /* 
+    /* 
     ================================
         Best Viewed In Full Page
     ================================
